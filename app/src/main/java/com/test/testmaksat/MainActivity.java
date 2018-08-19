@@ -1,19 +1,16 @@
 package com.test.testmaksat;
 
-import android.arch.lifecycle.LifecycleOwner;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-
+import com.test.testmaksat.data.DataRepositoryImpl;
+import com.test.testmaksat.data.DialogData;
+import com.test.testmaksat.data.UserDialogsListData;
 import com.vk.sdk.VKAccessToken;
 import com.vk.sdk.VKCallback;
 import com.vk.sdk.VKScope;
@@ -24,24 +21,17 @@ import com.vk.sdk.api.VKError;
 import com.vk.sdk.api.VKParameters;
 import com.vk.sdk.api.VKRequest;
 import com.vk.sdk.api.VKResponse;
-import com.vk.sdk.api.model.VKApiDialog;
-import com.vk.sdk.api.model.VKApiGetDialogResponse;
-import com.vk.sdk.api.model.VKApiGetMessagesResponse;
-import com.vk.sdk.api.model.VKApiMessage;
 import com.vk.sdk.api.model.VKList;
-import com.vk.sdk.util.VKUtil;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import rx.functions.Action1;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements DialogsAdapter.OnDialogClickListener {
 
     private String[] scope = new String[]{VKScope.MESSAGES, VKScope.FRIENDS, VKScope.WALL};
     private ListView listFriend;
     private Button showMessage;
     private VKList list;
+    private DataRepositoryImpl dataRepository = new DataRepositoryImpl();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,30 +47,12 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-
-                final VKRequest request = VKApi.messages().getDialogs(VKParameters.from(VKApiConst.COUNT, 50));
-                request.executeWithListener(new VKRequest.VKRequestListener() {
+                dataRepository.getUsersData().subscribe(new Action1<UserDialogsListData>() {
                     @Override
-                    public void onComplete(VKResponse response) {
-                        super.onComplete(response);
-
-                        VKApiGetDialogResponse getDialogResponse = (VKApiGetDialogResponse) response.parsedModel;
-
-                        VKList<VKApiDialog> list = getDialogResponse.items;
-
-                        ArrayList<String> messages = new ArrayList<>();
-                        ArrayList<String> users = new ArrayList<>();
-
-                        for(VKApiDialog msg : list){
-
-                            users.add(String.valueOf(MainActivity.this.list.getById(msg.message.user_id)));
-                            messages.add(msg.message.body);
-                        }
-
-                        listFriend.setAdapter(new CustomAdapter(MainActivity.this, users, messages, list));
+                    public void call(UserDialogsListData userDialogsListData) {
+                        listFriend.setAdapter(new DialogsAdapter(userDialogsListData, MainActivity.this));
                     }
                 });
-
             }
         });
     }
@@ -107,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(getApplicationContext(), "Good", Toast.LENGTH_LONG).show();
             }
+
             @Override
             public void onError(VKError error) {
                 // Произошла ошибка авторизации (например, пользователь запретил авторизацию)
@@ -114,5 +87,16 @@ public class MainActivity extends AppCompatActivity {
         })) {
             super.onActivityResult(requestCode, resultCode, data);
         }
+    }
+
+    @Override
+    public void onDialogClick(int userId) {
+        //todo показывать прогресс
+        dataRepository.getMessagesData(userId).subscribe(new Action1<DialogData>() {
+            @Override
+            public void call(DialogData dialogData) {
+                startActivity(new Intent(MainActivity.this, SendMessageActivity.class).putExtra("data", dialogData));
+            }
+        });
     }
 }

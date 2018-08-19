@@ -1,10 +1,40 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w720dp-v13\\values-w720dp-v13.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w720dp-v13/values-w720dp-v13.xml",
             "map": [
                 {
-                    "source": "E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\androidsdk-1.6.9.aar\\1b0101bda24eb41aeef25362f1f1bb82\\res\\values-w720dp-v13\\values-w720dp-v13.xml",
+                    "source": "/Users/urmanchev/.gradle/caches/transforms-1/files-1.1/androidsdk-1.6.9.aar/ed65656003dffb3b8b76550975db69be/res/values-w720dp-v13/values-w720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "60",
+                        "endOffsets": "111"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/app/build/intermediates/res/merged/debug/values-w720dp-v13/values-w720dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/urmanchev/.gradle/caches/transforms-1/files-1.1/androidsdk-1.6.9.aar/ed65656003dffb3b8b76550975db69be/res/values-w720dp-v13/values-w720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "60",
+                        "endOffsets": "111"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w720dp-v13\\values-w720dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\androidsdk-1.6.9.aar\\1b0101bda24eb41aeef25362f1f1bb82\\res\\values-w720dp-v13\\values-w720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

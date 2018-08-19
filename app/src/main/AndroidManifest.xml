@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.vk.sdk.VKServiceActivity" android:label="ServiceActivity" android:theme="@style/VK.Transparent" />
-        <activity android:name=".SendMessage"/>
+        <activity android:name=".SendMessageActivity"/>
     </application>
 
 </manifest>

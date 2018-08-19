@@ -40,6 +40,8 @@ public class CustomAdapter extends BaseAdapter{
         this.messages = messages;
         this.context = context;
         this.list = list;
+
+
     }
 
     public CustomAdapter(Context context, ArrayList<String> users, ArrayList<String> messages) {

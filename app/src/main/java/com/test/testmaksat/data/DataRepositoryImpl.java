@@ -1,6 +1,17 @@
 package com.test.testmaksat.data;
 
 
+import android.arch.persistence.room.Database;
+import android.arch.persistence.room.Insert;
+import android.arch.persistence.room.Query;
+import android.arch.persistence.room.Room;
+import android.arch.persistence.room.RoomDatabase;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.net.RouteInfo;
+import android.os.Message;
+
 import com.vk.sdk.api.VKApi;
 import com.vk.sdk.api.VKApiConst;
 import com.vk.sdk.api.VKParameters;
@@ -17,19 +28,56 @@ import rx.SingleSubscriber;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observable;
+
+import static com.vk.sdk.VKUIHelper.getApplicationContext;
 
 public class DataRepositoryImpl {
+
+    public Boolean isOnline (Context context){
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        if (netInfo != null && netInfo.isConnectedOrConnecting())
+        {
+            return true;
+        }
+        return false;
+
+    }
+
+
+
+ /*   public interface UserDialogsListDataDAO {
+
+        @Insert
+        void insertAll(UserDialogsListData userDialogsListData);
+
+
+        @Query("SELECT * FROM userdata")
+        List<UserDialogsListData.UserData> getAll();
+
+    }
+
+    @Database(entities = {UserDialogsListData.UserData.class}, version = 1)
+    public abstract class DataBase extends RoomDatabase {
+        public abstract com.test.testmaksat.data.UserDialogsListDataDAO userDialogsListDataDAO();
+    }
+ */
+
+
 
     public Single<UserDialogsListData> getUsersData() {
         return Single.create(new Single.OnSubscribe<UserDialogsListData>() {
             @Override
             public void call(final SingleSubscriber<? super UserDialogsListData> singleSubscriber) {
                 //todo найти проверку,есть ли интернет
-                if (true) {
-                    final VKRequest request = VKApi.messages().getDialogs(VKParameters.from(VKApiConst.COUNT, 50));
+                if (isOnline(getApplicationContext())){
+
+                    final VKRequest request = VKApi.messages().getDialogs(VKParameters.from(VKApiConst.COUNT, 30));
                     request.executeWithListener(new VKRequest.VKRequestListener() {
                         @Override
                         public void onComplete(VKResponse response) {
+
                             super.onComplete(response);
 
                             VKApiGetDialogResponse getDialogResponse = (VKApiGetDialogResponse) response.parsedModel;
@@ -46,11 +94,27 @@ public class DataRepositoryImpl {
                                 ));
                             }
                             //todo сохранить в БД
+
+                            DataBase db = App.getInstance().getDatabase();
+                            UserDialogsListDataDAO userDialogsListDataDAO = db.userDialogsListDataDAO();
+                            UserDialogsListData.UserData userData = new UserDialogsListData.UserData("null", 0, "null");
+
+                            //userData = UserDialogsListData.UserData.class.getName();
+
+
+
                             singleSubscriber.onSuccess(new UserDialogsListData(data));
                         }
                     });
                 } else {
                     //todo достать из БД
+
+                    DataBase db = App.getInstance().getDatabase();
+                    UserDialogsListData.UserData userData = new UserDialogsListData.UserData();
+                    UserDialogsListDataDAO userDataDAO = db.userDialogsListDataDAO();
+                    List<UserDialogsListData.UserData> userDataList = userDataDAO.getAll();
+
+
                 }
             }
         });
@@ -58,12 +122,14 @@ public class DataRepositoryImpl {
 
     public Single<DialogData> getMessagesData(final int userId) {
         return Single.create(new Single.OnSubscribe<DialogData>() {
+
             @Override
             public void call(final SingleSubscriber<? super DialogData> singleSubscriber) {
                 final ArrayList<String> inList = new ArrayList<>();
                 final ArrayList<String> outList = new ArrayList<>();
 
                 VKRequest request = new VKRequest("messages.getHistory", VKParameters.from(VKApiConst.USER_ID, userId));
+
                 request.executeWithListener(new VKRequest.VKRequestListener() {
                     @Override
                     public void onComplete(VKResponse response) {

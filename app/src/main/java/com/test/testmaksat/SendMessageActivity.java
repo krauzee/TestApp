@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.test.testmaksat.data.DataRepositoryImpl;
 import com.test.testmaksat.data.DialogData;
 import com.vk.sdk.api.VKApiConst;
 import com.vk.sdk.api.VKParameters;
@@ -18,6 +19,8 @@ import com.vk.sdk.api.model.VKApiMessage;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+
+import rx.Single;
 
 public class SendMessageActivity extends Activity {
 
@@ -45,12 +48,13 @@ public class SendMessageActivity extends Activity {
 
         send = findViewById(R.id.send);
         send.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
                 VKRequest request = new VKRequest("messages.send", VKParameters.from(VKApiConst.USER_ID, id,
                         VKApiConst.MESSAGE, text.getText().toString()));
-                        text.setText("");
+                text.setText("");
 
 
                 request.executeWithListener(new VKRequest.VKRequestListener() {
@@ -66,11 +70,12 @@ public class SendMessageActivity extends Activity {
                                 msg[i] = mes;
                             }
 
-                            for (VKApiMessage mess : msg){
-                                if(mess.out){
-                                    outList.add(mess.body);
-                                }else {
-                                    inList.add(mess.body);
+                            for (VKApiMessage mess : msg) {
+                                if (mess.out) {
+                                    //outList.add(mess.body);
+
+                                } else {
+                                    //inList.add(mess.body);
                                 }
                             }
 

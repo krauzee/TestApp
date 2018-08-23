@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/app/build/intermediates/res/merged/debug/values-v11/values-v11.xml",
+            "outputFile": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "/Users/urmanchev/.gradle/caches/transforms-1/files-1.1/androidsdk-1.6.9.aar/ed65656003dffb3b8b76550975db69be/res/values-v11/values-v11.xml",
+                    "source": "D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\androidsdk-1.6.9.aar\\ed65656003dffb3b8b76550975db69be\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,9",
                         "startColumns": "4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/urmanchev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/968852452ffe93ccb742c5f68f8ab5fe/res/values-v11/values-v11.xml",
+                    "source": "D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -36,10 +36,10 @@
             ]
         },
         {
-            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "outputFile": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "/Users/urmanchev/.gradle/caches/transforms-1/files-1.1/androidsdk-1.6.9.aar/ed65656003dffb3b8b76550975db69be/res/values-v11/values-v11.xml",
+                    "source": "D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\androidsdk-1.6.9.aar\\ed65656003dffb3b8b76550975db69be\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,9",
                         "startColumns": "4,4",
@@ -58,7 +58,7 @@
                     }
                 },
                 {
-                    "source": "/Users/urmanchev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/968852452ffe93ccb742c5f68f8ab5fe/res/values-v11/values-v11.xml",
+                    "source": "D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -71,10 +71,10 @@
             ]
         },
         {
-            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "/Users/urmanchev/Documents/projects/TestApp/E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-v11\\values-v11.xml",
+                    "source": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -85,7 +85,42 @@
                     }
                 },
                 {
-                    "source": "/Users/urmanchev/Documents/projects/TestApp/E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\androidsdk-1.6.9.aar\\1b0101bda24eb41aeef25362f1f1bb82\\res\\values-v11\\values-v11.xml",
+                    "source": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\androidsdk-1.6.9.aar\\1b0101bda24eb41aeef25362f1f1bb82\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,453",
+                        "endLines": "8,14",
+                        "endColumns": "12,12",
+                        "endOffsets": "448,825"
+                    },
+                    "to": {
+                        "startLines": "192,199",
+                        "startColumns": "4,4",
+                        "startOffsets": "14077,14475",
+                        "endLines": "198,204",
+                        "endColumns": "12,12",
+                        "endOffsets": "14470,14847"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "map": [
+                {
+                    "source": "E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,474,899,1327,1753,2180,2605,2694,2940,3189,3290,3542,3797,3900,4153,4561,4981,5403,5510,5639,5710,5793,9818,13986",
+                        "endLines": "7,13,19,25,31,37,38,42,46,47,51,55,56,60,65,70,75,77,79,80,81,135,190,191",
+                        "endColumns": "12,12,12,12,12,12,88,12,12,100,12,12,102,12,12,12,12,12,12,70,82,12,12,90",
+                        "endOffsets": "469,894,1322,1748,2175,2600,2689,2935,3184,3285,3537,3792,3895,4148,4556,4976,5398,5505,5634,5705,5788,9813,13981,14072"
+                    }
+                },
+                {
+                    "source": "E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\androidsdk-1.6.9.aar\\1b0101bda24eb41aeef25362f1f1bb82\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,9",
                         "startColumns": "4,4",

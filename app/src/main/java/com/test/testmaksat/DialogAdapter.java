@@ -8,10 +8,12 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 import com.test.testmaksat.data.DialogData;
+import com.test.testmaksat.data.UserDialogsListData;
 import com.vk.sdk.api.VKApiConst;
 import com.vk.sdk.api.VKParameters;
 import com.vk.sdk.api.VKRequest;
 import com.vk.sdk.api.VKResponse;
+import com.vk.sdk.api.methods.VKApiUsers;
 import com.vk.sdk.api.model.VKApiMessage;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -52,8 +54,10 @@ public class DialogAdapter extends BaseAdapter {
         setData.user_name = (TextView) view.findViewById(R.id.user_name);
         setData.msg = (TextView) view.findViewById(R.id.msg);
 
-        setData.user_name.setText(users.get(position));
-        setData.msg.setText(messages.get(position));
+        //setData.user_name.setText(users.get(position));
+
+        //setData.msg.setText(messages.get(position));
+
         return view;
     }
 

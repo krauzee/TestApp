@@ -22,6 +22,8 @@ import com.vk.sdk.api.VKParameters;
 import com.vk.sdk.api.VKRequest;
 import com.vk.sdk.api.VKResponse;
 import com.vk.sdk.api.model.VKList;
+
+import rx.Observable;
 import rx.functions.Action1;
 
 
@@ -37,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements DialogsAdapter.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         VKSdk.login(this, scope);
 

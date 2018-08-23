@@ -1,5 +1,10 @@
 package com.test.testmaksat.data;
 
+import android.arch.persistence.room.Database;
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+import android.arch.persistence.room.RoomDatabase;
+
 import java.util.List;
 
 public class UserDialogsListData {
@@ -13,12 +18,28 @@ public class UserDialogsListData {
         return list;
     }
 
+
+/*
+
+    @Database(entities = {UserDialogsListData.UserData.class}, version = 1)
+    public abstract class DataBase extends RoomDatabase {
+        public abstract com.test.testmaksat.data.UserDialogsListDataDAO userDialogsListDataDAO();
+    }
+*/
+
+    @Entity
     public static class UserData {
         private String userName;
-        private int userId;
+        private @PrimaryKey int userId;
         private String lastMessage;
 
         public UserData(String userName, int userId, String lastMessage) {
+            this.userName = userName;
+            this.userId = userId;
+            this.lastMessage = lastMessage;
+        }
+
+        public UserData() {
             this.userName = userName;
             this.userId = userId;
             this.lastMessage = lastMessage;

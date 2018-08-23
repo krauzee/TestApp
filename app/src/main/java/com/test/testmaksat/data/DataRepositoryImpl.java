@@ -94,27 +94,19 @@ public class DataRepositoryImpl {
                                 ));
                             }
                             //todo сохранить в БД
-
                             DataBase db = App.getInstance().getDatabase();
                             UserDialogsListDataDAO userDialogsListDataDAO = db.userDialogsListDataDAO();
-                            UserDialogsListData.UserData userData = new UserDialogsListData.UserData("null", 0, "null");
-
-                            //userData = UserDialogsListData.UserData.class.getName();
-
-
-
+                            userDialogsListDataDAO.deleteAll();
+                            userDialogsListDataDAO.insertAll(data);
                             singleSubscriber.onSuccess(new UserDialogsListData(data));
                         }
                     });
                 } else {
                     //todo достать из БД
-
                     DataBase db = App.getInstance().getDatabase();
-                    UserDialogsListData.UserData userData = new UserDialogsListData.UserData();
                     UserDialogsListDataDAO userDataDAO = db.userDialogsListDataDAO();
                     List<UserDialogsListData.UserData> userDataList = userDataDAO.getAll();
-
-
+                    singleSubscriber.onSuccess(new UserDialogsListData(userDataList));
                 }
             }
         });

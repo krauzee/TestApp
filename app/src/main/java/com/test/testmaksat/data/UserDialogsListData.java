@@ -27,7 +27,7 @@ public class UserDialogsListData {
     }
 */
 
-    @Entity
+    @Entity(tableName = "UserData")
     public static class UserData {
         private String userName;
         private @PrimaryKey int userId;

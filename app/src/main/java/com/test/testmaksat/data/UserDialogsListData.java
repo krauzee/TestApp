@@ -19,13 +19,6 @@ public class UserDialogsListData {
     }
 
 
-/*
-
-    @Database(entities = {UserDialogsListData.UserData.class}, version = 1)
-    public abstract class DataBase extends RoomDatabase {
-        public abstract com.test.testmaksat.data.UserDialogsListDataDAO userDialogsListDataDAO();
-    }
-*/
 
     @Entity(tableName = "UserData")
     public static class UserData {
@@ -34,12 +27,6 @@ public class UserDialogsListData {
         private String lastMessage;
 
         public UserData(String userName, int userId, String lastMessage) {
-            this.userName = userName;
-            this.userId = userId;
-            this.lastMessage = lastMessage;
-        }
-
-        public UserData() {
             this.userName = userName;
             this.userId = userId;
             this.lastMessage = lastMessage;

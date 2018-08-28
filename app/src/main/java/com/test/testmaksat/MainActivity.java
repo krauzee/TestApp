@@ -35,6 +35,10 @@ public class MainActivity extends AppCompatActivity implements DialogsAdapter.On
     private VKList list;
     private DataRepositoryImpl dataRepository = new DataRepositoryImpl();
 
+    //todo достать синглтон
+    Singleton singleton = Singleton.getInstance();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

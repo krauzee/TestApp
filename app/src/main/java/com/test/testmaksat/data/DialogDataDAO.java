@@ -4,21 +4,18 @@ import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Delete;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
-import android.arch.persistence.room.Update;
 
 import java.util.List;
 
-
 @Dao
-public interface UserDialogsListDataDAO {
+public interface DialogDataDAO {
 
     @Insert
-    void insertAll(List<UserDialogsListData.UserData> data);
+    void insertAll(List<DialogData> data);
 
-    @Query("DELETE FROM UserData")
+    @Query("DELETE FROM DialogData")
     void deleteAll();
 
-    @Query("SELECT * FROM userdata")
-    List<UserDialogsListData.UserData> getAll();
-
+    @Query("SELECT * FROM DialogData")
+    List<DialogData> getAll();
 }

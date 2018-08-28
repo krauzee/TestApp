@@ -54,9 +54,9 @@ public class DialogAdapter extends BaseAdapter {
         setData.user_name = (TextView) view.findViewById(R.id.user_name);
         setData.msg = (TextView) view.findViewById(R.id.msg);
 
-        //setData.user_name.setText(users.get(position));
+        setData.user_name.setText(position);
 
-        //setData.msg.setText(messages.get(position));
+        setData.msg.setText(position);
 
         return view;
     }

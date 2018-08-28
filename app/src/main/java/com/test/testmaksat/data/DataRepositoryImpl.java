@@ -47,29 +47,11 @@ public class DataRepositoryImpl {
 
 
 
- /*   public interface UserDialogsListDataDAO {
-
-        @Insert
-        void insertAll(UserDialogsListData userDialogsListData);
-
-
-        @Query("SELECT * FROM userdata")
-        List<UserDialogsListData.UserData> getAll();
-
-    }
-
-    @Database(entities = {UserDialogsListData.UserData.class}, version = 1)
-    public abstract class DataBase extends RoomDatabase {
-        public abstract com.test.testmaksat.data.UserDialogsListDataDAO userDialogsListDataDAO();
-    }
- */
-
-
-
     public Single<UserDialogsListData> getUsersData() {
         return Single.create(new Single.OnSubscribe<UserDialogsListData>() {
             @Override
             public void call(final SingleSubscriber<? super UserDialogsListData> singleSubscriber) {
+
                 //todo найти проверку,есть ли интернет
                 if (isOnline(getApplicationContext())){
 
@@ -120,38 +102,57 @@ public class DataRepositoryImpl {
                 final ArrayList<String> inList = new ArrayList<>();
                 final ArrayList<String> outList = new ArrayList<>();
 
-                VKRequest request = new VKRequest("messages.getHistory", VKParameters.from(VKApiConst.USER_ID, userId));
+                if (isOnline(getApplicationContext())) {
 
-                request.executeWithListener(new VKRequest.VKRequestListener() {
-                    @Override
-                    public void onComplete(VKResponse response) {
-                        super.onComplete(response);
+                    VKRequest request = new VKRequest("messages.getHistory", VKParameters.from(VKApiConst.USER_ID, userId));
 
-                        try {
-                            JSONArray array = response.json.getJSONObject("response").getJSONArray("items");
-                            VKApiMessage[] msg = new VKApiMessage[array.length()];
-                            for (int i = 0; i < array.length(); i++) {
-                                VKApiMessage mes = new VKApiMessage(array.getJSONObject(i));
-                                msg[i] = mes;
-                            }
+                    request.executeWithListener(new VKRequest.VKRequestListener() {
+                        @Override
+                        public void onComplete(VKResponse response) {
+                            super.onComplete(response);
 
-                            for (VKApiMessage mess : msg) {
-                                if (mess.out) {
-                                    outList.add(mess.body);
-                                } else {
-                                    inList.add(mess.body);
+                            DialogData data = null;
+                            try {
+                                JSONArray array = response.json.getJSONObject("response").getJSONArray("items");
+                                VKApiMessage[] msg = new VKApiMessage[array.length()];
+                                for (int i = 0; i < array.length(); i++) {
+                                    VKApiMessage mes = new VKApiMessage(array.getJSONObject(i));
+                                    msg[i] = mes;
                                 }
+
+                                for (VKApiMessage mess : msg) {
+                                    if (mess.out) {
+                                        outList.add(mess.body);
+                                    } else {
+                                        inList.add(mess.body);
+                                    }
+                                }
+                                data = new DialogData(inList, outList, userId);
+                                singleSubscriber.onSuccess(data);
+                            } catch (JSONException e) {
+                                e.printStackTrace();
                             }
-                            DialogData data = new DialogData(inList, outList, userId);
-                            singleSubscriber.onSuccess(data);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
+
+                            //todo сохранить в бд
+                            DataBase db = App.getInstance().getDatabase();
+                            DialogDataDAO dialogDataDAO = db.dialogDataDAO();
+                            dialogDataDAO.deleteAll();
+                            dialogDataDAO.insertAll(data);
+                            singleSubscriber.onSuccess(new DialogData(data));
 //                        Collections.sort(inList);
-//                        //Arrays.sort(inList.toArray();
+//                        Arrays.sort(inList.toArray();
 //                        Arrays.sort(outList.toArray());
-                    }
-                });
+                        }
+                    });
+                } else{
+                    //todo достать из бд
+                    DataBase db = App.getInstance().getDatabase();
+                    DialogDataDAO dialogDataDAO = db.dialogDataDAO();
+                    List<DialogData> dialogDataList = dialogDataDAO.getAll();
+                    singleSubscriber.onSuccess(new DialogData(dialogDataList));
+
+
+                }
             }
         });
     }

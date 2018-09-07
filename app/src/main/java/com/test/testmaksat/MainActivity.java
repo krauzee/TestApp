@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements DialogsAdapter.On
     private DataRepositoryImpl dataRepository = new DataRepositoryImpl();
 
     //todo достать синглтон
-    Singleton singleton = Singleton.getInstance();
 
 
     @Override

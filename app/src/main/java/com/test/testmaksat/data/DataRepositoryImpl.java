@@ -11,6 +11,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.RouteInfo;
 import android.os.Message;
+import android.provider.ContactsContract;
 
 import com.vk.sdk.api.VKApi;
 import com.vk.sdk.api.VKApiConst;
@@ -137,8 +138,8 @@ public class DataRepositoryImpl {
                             DataBase db = App.getInstance().getDatabase();
                             DialogDataDAO dialogDataDAO = db.dialogDataDAO();
                             dialogDataDAO.deleteAll();
-                            dialogDataDAO.insertAll(data);
-                            singleSubscriber.onSuccess(new DialogData(data));
+                            dialogDataDAO.insert(data);
+                            singleSubscriber.onSuccess(data);
 //                        Collections.sort(inList);
 //                        Arrays.sort(inList.toArray();
 //                        Arrays.sort(outList.toArray());
@@ -148,8 +149,9 @@ public class DataRepositoryImpl {
                     //todo достать из бд
                     DataBase db = App.getInstance().getDatabase();
                     DialogDataDAO dialogDataDAO = db.dialogDataDAO();
-                    List<DialogData> dialogDataList = dialogDataDAO.getAll();
-                    singleSubscriber.onSuccess(new DialogData(dialogDataList));
+                    DialogData dd = new DialogData(inList, outList, userId);
+                    List<DialogData> dialogDataList = dialogDataDAO.getDialogById(dd.getUserId());
+                    singleSubscriber.onSuccess(dialogDataList);
 
 
                 }

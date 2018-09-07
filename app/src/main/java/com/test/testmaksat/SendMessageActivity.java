@@ -51,8 +51,6 @@ public class SendMessageActivity extends Activity {
 
         //todo достать синглтон
 
-        Singleton singleton = Singleton.getInstance();
-
         text = findViewById(R.id.text);
         listView = findViewById(R.id.listMsg);
         listView.setAdapter(new DialogAdapter(data));

@@ -11,11 +11,17 @@ import java.util.List;
 public interface DialogDataDAO {
 
     @Insert
-    void insertAll(List<DialogData> data);
+    void insert(DialogData data);
 
     @Query("DELETE FROM DialogData")
     void deleteAll();
 
     @Query("SELECT * FROM DialogData")
     List<DialogData> getAll();
+
+    @Query("SELECT * FROM DialogData WHERE userId = 'ОН ДОЛЖЕН РАВНЯТЬСЯ АЙДИШНИКУ ИТЕМА, ПО КОТОРОМУ ТАПНУЛИ, НО КАК ЭТО СЮДА ВКОРЯЧИТЬ??'")
+    void getDialogById(DialogData userId);
+
+
+
 }

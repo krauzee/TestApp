@@ -19,7 +19,9 @@ public interface DialogDataDAO {
     @Query("SELECT * FROM DialogData")
     List<DialogData> getAll();
 
-    @Query("SELECT * FROM DialogData WHERE userId = :userId")
-    DialogData getDialogById(int userId);
+    @Query("SELECT * FROM DialogData WHERE userId = 'ОН ДОЛЖЕН РАВНЯТЬСЯ АЙДИШНИКУ ИТЕМА, ПО КОТОРОМУ ТАПНУЛИ, НО КАК ЭТО СЮДА ВКОРЯЧИТЬ??'")
+    void getDialogById(DialogData userId);
+
+
 
 }

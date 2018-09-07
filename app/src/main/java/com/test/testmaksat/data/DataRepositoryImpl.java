@@ -149,8 +149,11 @@ public class DataRepositoryImpl {
                     //todo достать из бд
                     DataBase db = App.getInstance().getDatabase();
                     DialogDataDAO dialogDataDAO = db.dialogDataDAO();
-                    DialogData dialogDataList = dialogDataDAO.getDialogById(userId);
+                    DialogData dd = new DialogData(inList, outList, userId);
+                    List<DialogData> dialogDataList = dialogDataDAO.getDialogById(dd.getUserId());
                     singleSubscriber.onSuccess(dialogDataList);
+
+
                 }
             }
         });

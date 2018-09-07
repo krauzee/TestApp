@@ -1,9 +1,12 @@
 package com.test.testmaksat;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements DialogsAdapter.On
     private Button showMessage;
     private VKList list;
     private DataRepositoryImpl dataRepository = new DataRepositoryImpl();
+    ProgressDialog progressDialog;
 
     //todo достать синглтон
 
@@ -41,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements DialogsAdapter.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
         VKSdk.login(this, scope);
@@ -96,6 +102,11 @@ public class MainActivity extends AppCompatActivity implements DialogsAdapter.On
     @Override
     public void onDialogClick(int userId) {
         //todo показывать прогресс
+        progressDialog = new ProgressDialog(MainActivity.this);
+        progressDialog.setMessage("Loading...");
+        progressDialog.setCancelable(false);
+        progressDialog.setProgressStyle(progressDialog.STYLE_SPINNER);
+        progressDialog.show();
         dataRepository.getMessagesData(userId).subscribe(new Action1<DialogData>() {
             @Override
             public void call(DialogData dialogData) {

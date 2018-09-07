@@ -7,7 +7,7 @@ import android.arch.persistence.room.PrimaryKey;
 import java.io.Serializable;
 import java.util.List;
 
-@Entity (tableName = "DialogData")
+@Entity(tableName = "DialogData")
 public class DialogData implements Serializable{
     private List<String> inList;
     private List<String> outList;
@@ -23,6 +23,7 @@ public class DialogData implements Serializable{
     public List<String> getInList() {
         return inList;
     }
+
 
     public List<String> getOutList() {
         return outList;

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -17,10 +17,10 @@
             ]
         },
         {
-            "outputFile": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\res\\merged\\debug\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -33,10 +33,10 @@
             ]
         },
         {
-            "outputFile": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/urmanchev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/968852452ffe93ccb742c5f68f8ab5fe/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -49,10 +49,42 @@
             ]
         },
         {
-            "outputFile": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\res\\merged\\debug\\values-v23\\values-v23.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/app/build/intermediates/res/merged/debug/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/urmanchev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/968852452ffe93ccb742c5f68f8ab5fe/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,19,32,33,34,35,36",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,325,400,487,1277,2079,2206,2311,2426,2533",
+                        "endLines": "2,3,4,5,18,31,32,33,34,35,36",
+                        "endColumns": "134,134,74,86,12,12,126,104,114,106,112",
+                        "endOffsets": "185,320,395,482,1272,2074,2201,2306,2421,2528,2641"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "map": [
+                {
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,19,32,33,34,35,36",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,325,400,487,1277,2079,2206,2311,2426,2533",
+                        "endLines": "2,3,4,5,18,31,32,33,34,35,36",
+                        "endColumns": "134,134,74,86,12,12,126,104,114,106,112",
+                        "endOffsets": "185,320,395,482,1272,2074,2201,2306,2421,2528,2641"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "map": [
+                {
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

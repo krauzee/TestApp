@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v26\\values-v26.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/app/build/intermediates/res/merged/androidTest/debug/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-v26\\values-v26.xml",
+                    "source": "/Users/urmanchev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/968852452ffe93ccb742c5f68f8ab5fe/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
@@ -17,10 +17,10 @@
             ]
         },
         {
-            "outputFile": "D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v26\\values-v26.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
-                    "source": "E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-v26\\values-v26.xml",
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
@@ -33,10 +33,10 @@
             ]
         },
         {
-            "outputFile": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v26\\values-v26.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-v26\\values-v26.xml",
+                    "source": "/Users/urmanchev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/968852452ffe93ccb742c5f68f8ab5fe/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
@@ -49,10 +49,42 @@
             ]
         },
         {
-            "outputFile": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-v26\\values-v26.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-v26\\values-v26.xml",
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-v26\\values-v26.xml",
+                    "from": {
+                        "startLines": "2,3,4,8,12,16",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,130,217,431,657,896",
+                        "endLines": "2,3,7,11,15,16",
+                        "endColumns": "74,86,12,12,12,92",
+                        "endOffsets": "125,212,426,652,891,984"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-v26\\values-v26.xml",
+            "map": [
+                {
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-v26\\values-v26.xml",
+                    "from": {
+                        "startLines": "2,3,4,8,12,16",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,130,217,431,657,896",
+                        "endLines": "2,3,7,11,15,16",
+                        "endColumns": "74,86,12,12,12,92",
+                        "endOffsets": "125,212,426,652,891,984"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v26\\values-v26.xml",
+            "map": [
+                {
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

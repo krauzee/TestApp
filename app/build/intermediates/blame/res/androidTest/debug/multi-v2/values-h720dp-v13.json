@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "/Users/urmanchev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/968852452ffe93ccb742c5f68f8ab5fe/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/app/build/intermediates/res/merged/androidTest/debug/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "/Users/urmanchev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/968852452ffe93ccb742c5f68f8ab5fe/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -31,10 +31,10 @@
             ]
         },
         {
-            "outputFile": "D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -46,10 +46,40 @@
             ]
         },
         {
-            "outputFile": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-h720dp-v13\\values-h720dp-v13.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-h720dp-v13\\values-h720dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/app/build/intermediates/res/merged/debug/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "/Users/urmanchev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/968852452ffe93ccb742c5f68f8ab5fe/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
@@ -31,10 +31,10 @@
             ]
         },
         {
-            "outputFile": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\D:\\AndroidProjects\\TestMaksat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\E:\\AndroidProjects\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16952744a30ac9ab94d7080e77068dd4\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
@@ -46,10 +46,40 @@
             ]
         },
         {
-            "outputFile": "D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\res\\merged\\debug\\values-xlarge-v4\\values-xlarge-v4.xml",
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,126,197,267,337,405",
+                        "endColumns": "70,70,69,69,67,67",
+                        "endOffsets": "121,192,262,332,400,468"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/urmanchev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/968852452ffe93ccb742c5f68f8ab5fe/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,126,197,267,337,405",
+                        "endColumns": "70,70,69,69,67,67",
+                        "endOffsets": "121,192,262,332,400,468"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\Documents\\projects\\TestApp\\app\\build\\intermediates\\res\\merged\\debug\\values-xlarge-v4\\values-xlarge-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/urmanchev/Documents/projects/TestApp/D:\\Users\\urmanchev\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\968852452ffe93ccb742c5f68f8ab5fe\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
